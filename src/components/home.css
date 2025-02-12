@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Comfortaa:wght@300&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    background-color: #fffefd;
+}
+
+
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: white; 
+    z-index: 1000;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.logo{
+    padding-left: 230px;
+    font-weight: bold;
+    font-size: 23px;
+    color:#d70906;
+}
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+}
+.navbar ul{
+    margin-right: 190px;
+    
+}
+.navbar li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 30px;
+}
+.navbar a{
+    color: #002c65;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+.navbar a:hover {
+    transform: scale(1.1); 
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 15px;
+}
+.waving-image{
+    display: flex;
+    height: 60px;
+    width: 60px;
+    padding-left: 9px;
+    animation: wave 1.5s infinite alternate;
+}
+@keyframes wave {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(15deg); 
+    }
+    100% {
+      transform: rotate(0deg); 
+    }
+  }
+.Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 95px;
+}
+.Home-Text{
+    padding:60px;
+}
+.Home-Text h2, h1, p{
+    margin:5px;
+}
+.Home-Text h1{
+    font-size: 50px;
+    display: flex;
+}
+.Home-Text p{
+    font-size: 28px;
+}
+.Home-Text h2{
+    font-size: 21px;
+}
+.Home-Text h1 span{
+    color:#d70906;
+    padding-left: 8px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mText {
+    display: inline-block;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 1s; /* Delays to sync with other elements */
+}
+.content-image{
+        width: 450px;
+        height: 430px;
+        padding: 10px;
+        margin-right: 60px;
+}
+.About {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    padding: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column; 
+}
+.container {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 1000px; 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+.aboutText { 
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    justify-content: flex-start; 
+    width: 70%;
+    margin-left: 10px;
+}
+
+.aboutText p {
+    margin-bottom: 10px; 
+    line-height: 1.4; 
+}
+.aboutimg {   /*about image*/
+    width: 250px;
+    height: 250px;
+    object-fit: cover; 
+    justify-content: center;
+}
+.container p {
+    font-size: 14px; 
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.language{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.hr {
+    border: none;
+    height: 2px;
+    background-color: black; 
+    width: 50%}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+.skills img {
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+.portfolio h3{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+.capstone-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures responsiveness */
+    gap: 20px;
+    padding: 30px 100px;
+    justify-content: center;
+    max-width: 1000px; 
+    margin: auto;
+}
+.capstone-card {
+    width: 300px; 
+    height: 350px; 
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.capstone-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.capstone-card p {
+    font-size: 12px;
+    margin: 10px 0;
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.capstone-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    padding: 5px;
+    
+}
+.conpage {
+    padding-left: 150px;
+    padding-bottom: 30px;
+    
+ }
+ .conpage h3{
+    padding-left: 20px;
+ }
+ .contacts{
+    display: flex;
+    
+ }
+ .contacts p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .contacts img{
+    width: 25px;
+    height: 25px;
+    padding-left: 20px;
+    padding-right: 10px;
+ }
