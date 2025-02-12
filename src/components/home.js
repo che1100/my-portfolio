@@ -14,8 +14,7 @@ import jslogo from "../img/javascrpt.png";
 import reactlogo from "../img/react.png";
 import figmalogo from "../img/figma.png";
 import clogo from "../img/c.png";
-
-
+import download from "../img/download.png";
 
 const Home = () => {
   return (
@@ -36,24 +35,30 @@ const Home = () => {
           <h1>Hello I 'am <span>Cherrie</span><img src={wavingHand} className="waving-image" /> </h1>
           <p>An Aspiring <span className="mText">Web Developer</span></p>
           <h2>Welcome to My Portfolio</h2>
+          <button className="resumebtn">
+          <img src={download} className="Downloadicon" />
+          <a href="/resume.pdf" download className="resume">Resume</a>
+        </button>
         </div>
         <img src={bckImage} className="content-image"/>
       </section>
       <section id = "ABOUT" className="About">
         <div className="container">
-        <img src={abtImage} className="aboutimg"/>
-        <div className="aboutText">
-        <h3 >About me</h3>
-        <p>Hi there! My name is Cherrie Anne Paclibar, an aspiring Front-End 
+          <div className="container-one">
+          <img src={abtImage} className="aboutimg"/>
+          </div>
+            <div className="aboutText">
+             <h3 >About me</h3>
+              <p>Hi there! I am Cherrie Anne Paclibar, an aspiring Web
           Developer and a 4th-year Information Technology student at Holy Cross 
           of Davao College. I am a dedicated student with a passion for web design 
           and development.</p>
-        <p>Currently pursuing my Bachelor of Science in Information Technology (BSIT) 
+             <p>Currently pursuing my Bachelor of Science in Information Technology (BSIT) 
           at HCDC, I am eager to dive into the world of IT and make a meaningful 
           impact through innovative and user-friendly web experiences..</p>
+
         </div>
-        </div>
-        <hr></hr>
+      </div>
         <h3 className="language">Skills</h3>
           <div className="skills">
           <img src={htmllogo}/>
@@ -77,23 +82,21 @@ const Home = () => {
       </div>
       </section>
       </footer>
+      <div className="footer-bottom">
+    <p>&copy; 2024 Cherrie Anne Paclibar. All rights reserved.</p>
+  </div>
     </div>
   );
 };
 const CapstoneGrid = () => {
   const capstoneProjects = [
     { img: port1, title: "CT Express", 
-      desc: "A mobile app for Calinan Terminal that automates priority numbers, enables online payments, and tracks L300 vehicle locations for commuters.." },
+      desc: "A capstone project that is a mobile app for Calinan Terminal, which automates priority numbers, enables online payments, and tracks L300 vehicle locations for commuters" },
     { img: port2, title: "Course Recommendation System", 
-      desc: "An AI-based course recommendation system suggests personalized courses to students based on their interests, performance, and learning goals using machine learning algorithms." },
+      desc: "An AI-based course recommendation system that suggests personalized courses to students based on their interests, performance, and learning goals using machine learning algorithms." },
     { img: port2, title: "Project 3", 
       desc: "A mobile-responsive portfolio website." },
-    { img: port2, title: "Project 3", 
-      desc: "A mobile-responsive portfolio website." },
-    { img: port2, title: "Project 3", 
-      desc: "A mobile-responsive portfolio website." },
-    { img: port2, title: "Project 3", 
-      desc: "A mobile-responsive portfolio website." },
+
   ];
 
   return (
@@ -111,6 +114,7 @@ const CapstoneGrid = () => {
           <p>{project.desc}</p>
         </motion.div>
       ))}
+      
     </div>
   );
 };
