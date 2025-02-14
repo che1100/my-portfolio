@@ -86,13 +86,13 @@ const Home = () => {
       <p><img src={pin} className="icon"/>Davao City, Philippines</p>
       </div>
       <div className="social-media">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/cherrie.paclibar" target="_blank" rel="noopener noreferrer">
                 <img src={fb}  alt="Facebook" className="icon" />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/cherwieann/" target="_blank" rel="noopener noreferrer">
                 <img src={ig}  alt="Instagram" className="icon" />
             </a>
-            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/che1100" target="_blank" rel="noopener noreferrer">
                 <img src={git} alt="GitHub" className="icon" />
             </a>
         </div>
