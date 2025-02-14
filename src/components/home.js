@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import { motion } from "framer-motion";
+import { interpolate, motion } from "framer-motion";
 import bckImage from "../img/image1.png";
 import wavingHand from "../img/wavinghand.png";
 import download from "../img/download.png";
@@ -15,6 +15,10 @@ import csslogo from "../img/text.png";
 import reactlogo from "../img/react.png";
 import figmalogo from "../img/figma.png";
 import pin from "../img/pin.png";
+import fb from "../img/fb.png";
+import ig from "../img/instagram.png";
+import git from "../img/github.png";
+
 
 const Home = () => {
   return (
@@ -70,7 +74,7 @@ const Home = () => {
       </div>
       </section>
       <section id="PORTFOLIO" className="portfolio">
-      <h3>Projects</h3>
+      <h3 className="projects-title">Projects</h3>
       <CapstoneGrid />
       </section>
       <footer>
@@ -81,6 +85,17 @@ const Home = () => {
       <p><img src={phone} className="icon"/>09610724699</p>
       <p><img src={pin} className="icon"/>Davao City, Philippines</p>
       </div>
+      <div className="social-media">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src={fb}  alt="Facebook" className="icon" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src={ig}  alt="Instagram" className="icon" />
+            </a>
+            <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+                <img src={git} alt="GitHub" className="icon" />
+            </a>
+        </div>
       </section>
       </footer>
       <div className="footer-bottom">
