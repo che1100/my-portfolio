@@ -4,21 +4,20 @@
     
 }
 
-
 .header{
-    position: sticky;
     top: 0;
-    width: 100%;
-    background-color: white; 
+    width: 100%; 
     z-index: 1000;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    background-color: #fff;
     
 }
 .logo{
-    padding-left: 230px;
+    margin-left: 160px;
     font-weight: bold;
     font-size: 23px;
     color:#d70906;
@@ -26,24 +25,21 @@
 .navbar{
     display: flex;
     justify-content: flex-end;
-}
-.navbar ul{
     margin-right: 190px;
-    
 }
 .navbar li{
     list-style-type: none;
     display: inline;
-    padding-right: 30px;
+    margin-right: 30px;
 }
 .navbar a{
     color: black;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
 .navbar a:hover {
-    color: #002c65;
+    color: #d70906;
     transform: scale(1.1); 
     font-weight:bolder;
     padding: 7px;
@@ -75,6 +71,9 @@
 }
 .Home-Text{
     padding:60px;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 1s; 
 }
 .Home-Text h2, h1, p{
     margin:5px;
@@ -103,25 +102,24 @@
         transform: translateY(0);
     }
 }
-
 .mText {
     display: inline-block;
     font-weight: bold;
-    opacity: 0;
-    animation: fadeInUp 1.5s ease-out forwards;
-    animation-delay: 1s; 
+
 }
 .resumebtn {
-    width: 150px;
-    height: 35px;
-    background-color: #d70906;
+    width: 110px;
+    height: 32px;
     border: none;
     border-radius: 10px;
+    margin-left: 8px;
+    line-height: 1.5;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px; 
+    gap: 8px; 
     cursor: pointer;
+    background-color: #d70906;
     transition: transform 0.2s ease-in-out;
 }
 
@@ -163,6 +161,7 @@
     width: 80%;
     max-width: 1000px; 
     padding: 20px;
+    border-color:#d70906 2px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: justify;
 }
@@ -177,38 +176,19 @@
 .aboutText p {
     margin-bottom: 10px; 
 }
-
 .aboutimg {   /*about */
     width: 250px;
-    height: 250px;
+    height: 270px;
+    border: #d70906  3px ;
     object-fit: cover; 
     justify-content: center;
 }
-
-
 .container p {
-    font-size: 14px; 
-    line-height: 1.6;
     margin-bottom: 20px;
 }
-h3 {
-    font-size: 26px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 10px;
+.About-Skills h3 {
+    text-align: center;
 }
-.language{
-    font-size: 28px;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-.hr {
-    border: none;
-    height: 2px;
-    background-color: black; 
-    width: 50%}
-
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -221,39 +201,37 @@ h3 {
     padding: 20px;
 }
 .portfolio h3{
-    font-size: 22px;
     font-weight: bold;
     text-align: center;
 }
 .capstone-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensures responsiveness */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     gap: 20px;
     padding: 30px 100px;
     justify-content: center;
     max-width: 1000px; 
     margin: auto;
+    
+    
 }
 .capstone-card {
     width: 300px; 
-    height: 350px; 
-    background: #fff;
+    height: 365px; 
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-..capstone-card :hover{
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
 }
 .capstone-card h3 {
     font-size: 16px;
     font-weight: bold;
-    margin: 10px 0;
+    margin: 10px;
 }
 .capstone-card p {
     font-size: 12px;
-    margin: 10px 0;
+    margin: 10px ;
     text-align: justify;
     padding-left: 20px;
     padding-right: 15px;
@@ -263,7 +241,6 @@ h3 {
     height: 200px;
     object-fit: cover;
     border-radius: 8px;
-    padding: 5px;
     
 }
 .conpage {
@@ -276,12 +253,14 @@ h3 {
  }
  .contacts{
     display: flex;
-    
  }
  .contacts p{
     display: flex;
     justify-content: center;
     align-items: center;
+ }
+ .email{
+    color: black;
  }
  .contacts img{
     width: 25px;
