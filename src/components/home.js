@@ -4,110 +4,129 @@ import { interpolate, motion } from "framer-motion";
 import bckImage from "../img/image1.png";
 import wavingHand from "../img/wavinghand.png";
 import download from "../img/download.png";
-import abtImage from "../img/mew.png";
+import abtImage from "../img/mw.png";
 import port1 from "../img/port1.png";
 import port2 from "../img/port2.png";
 import port3 from "../img/port3.png";
 import email from "../img/email.png";
 import phone from "../img/phone-call.png";
-import htmllogo from "../img/html.png";
-import csslogo from "../img/text.png";
-import reactlogo from "../img/react.png";
-import figmalogo from "../img/figma.png";
 import pin from "../img/pin.png";
 import fb from "../img/fb.png";
 import ig from "../img/instagram.png";
 import git from "../img/github.png";
+import logo from "../img/Clogo.png";
+import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
+import { FaLaptopCode, FaRocket, FaGlobe, FaMagic, 	FaPaintBrush, FaStar } from "react-icons/fa";
+import { SiFigma } from "react-icons/si";
 
 
 const Home = () => {
   return (
     <div  className="HomeHead">
-      <header id="HOME" className="header">
-        <div className="logo">Cherrie.</div>
-        <nav className="navbar">
-          <ul>
-            <li><a href="#HOME">Home</a></li>
-            <li><a href="#ABOUT">About</a></li>
-            <li><a href="#PORTFOLIO">Portfolio</a></li>
-            <li><a href="#CONTACT">Contact</a></li>
-          </ul>
-        </nav>
+      <header className="header">
+      <div className="nav-container">
+    <div className="logo">
+      <img src={logo} className="LOGO" alt="Cherrie Logo" />
+    </div>
+    <nav className="navbar">
+      <ul>
+        <li><a href="#HOME">Home</a></li>
+        <li><a href="#ABOUT">About</a></li>
+        <li><a href="#PORTFOLIO">Portfolio</a></li>
+        <li><a href="#CONTACT">Contact</a></li>
+        <button className="resumebtn">
+                  <img src={download} className="Downloadicon" />
+                  <a href="/resume.pdf" download className="resume">Resume</a>
+                </button>
+      </ul>
+    </nav>
+  </div>
       </header>
-      <section  className="Home">
+      <section id ="HOME"  className="Home">
         <div className="Home-Text">
           <h1>Hello I 'am <span>Cherrie</span><img src={wavingHand} className="waving-image" /> </h1>
-          <p>An Aspiring <span className="mText">Web Developer</span></p>
+          <p>An Aspiring <span className="mText">Front-end Developer</span></p>
           <h2>Welcome to My Portfolio</h2>
-
         </div>
         <img src={bckImage} className="content-image"/>
       </section>
+
       <section id = "ABOUT" className="About">
         <div className="container">
           <div className="container-one">
             <img src={abtImage} className="aboutimg"/>
           </div>
             <div className="aboutText">
-             <h3>About me</h3>
-              <p>Hi there! I am Cherrie Anne Paclibar, an aspiring Web
-                 Developer and a 4th-year Information Technology student at Holy Cross 
-                 of Davao College. I am a dedicated student with a passion for web design 
-                 and development. Currently pursuing my Bachelor of Science in Information Technology (BSIT) 
-                 at HCDC, I am eager to dive into the world of IT and make a meaningful 
-                 impact through innovative and user-friendly web experiences.
+             <h2>About me</h2>
+              <p>✨<strong>Hi there!</strong> I'm <strong> Cherrie Anne Paclibar,</strong>  a a{" "}
+              <em>4th-year Information Technology student</em> at{" "}
+              <em>Holy Cross of Davao College</em> and {" "} <strong> an aspiring Front-End Developer.💻</strong>
+                  I’m passionate about <em> crafting beautiful, user-friendly web experiences </em> and
+                  <strong> bringing designs to life </strong> with <em> intuitive and dynamic interfaces. </em> 
+                <p>As I continue my BSIT,💻 I’m excited to explore new technologies 
+                  and <em> create engaging digital experiences that make an impact!</em>✨</p>
               </p>
-                <button className="resumebtn">
-                  <img src={download} className="Downloadicon" />
-                  <a href="/resume.pdf" download className="resume">Resume</a>
-                </button>
+              <SkillsBadge />
             </div>
         </div>
-      <div className="About-Skills">
-      <h3>Skills</h3>
-          <div className="skills">
-          <img src={htmllogo}/>
-          <img src={csslogo}/>
-          <img src={reactlogo}/>
-          <img src={figmalogo}/>
-          </div>
-      </div>
       </section>
-      <section id="PORTFOLIO" className="portfolio">
-      <h3 className="projects-title">Projects</h3>
-      <CapstoneGrid />
+        <section id="PORTFOLIO" className="portfolio">
+          <CapstoneGrid />
       </section>
       <footer>
       <section id="CONTACT" className="conpage">
-      <h3>Contact me</h3>
+      <h1>Contact me</h1>
       <div className="contacts">
       <p className="email"><img src={email} className="icon"/><a>cherrieanne.paclibar@hcdc.edu.ph</a></p>
       <p><img src={phone} className="icon"/>09610724699</p>
       <p><img src={pin} className="icon"/>Davao City, Philippines</p>
       </div>
       <div className="social-media">
-            <a href="https://www.facebook.com/cherrie.paclibar" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/cherrie.paclibar" >
                 <img src={fb}  alt="Facebook" className="icon" />
             </a>
-            <a href="https://www.instagram.com/cherwieann/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/cherwieann/" >
                 <img src={ig}  alt="Instagram" className="icon" />
             </a>
-            <a href="https://github.com/che1100" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/che1100" >
                 <img src={git} alt="GitHub" className="icon" />
             </a>
         </div>
       </section>
       </footer>
       <div className="footer-bottom">
-    <p>&copy; 2024 Cherrie Anne Paclibar. All rights reserved.</p>
+    <p>2024 Cherrie Anne Paclibar. All rights reserved.</p>
   </div>
     </div>
   );
 };
+
+const SkillsBadge = () => {
+  const skills = [{name:"HTML", icon:<FaHtml5 /> },
+                  {name:"CSS", icon:<FaCss3Alt />},
+                  {name:"ReactJS", icon:<FaReact />},
+                  {name:"Figma", icon:<SiFigma /> },  
+                ];
+
+  return (
+    <div>
+      <h2>Skills</h2>
+    <div className="skills-container">
+      {skills.map((skill, index) => (
+        <span key={index} className="skillbadge"> 
+        {skill.icon}
+        <span className="skill-name">{skill.name}</span>
+        </span>
+      ))}
+    </div>
+    </div>
+  );
+};
+  
 const CapstoneGrid = () => {
   const capstoneProjects = [
     { img: port1, title: "CT Express", 
-      desc: "A capstone project that is a mobile app for Calinan Terminal, which automates priority numbers, enables online payments, and tracks L300 vehicle locations for commuters." },
+      desc: "A capstone project that A mobile app designed for Calinan Terminal that streamlines commuter experience by automating priority number issuance, enabling online payments, and providing real-time tracking of L300 vehicle locations." },
     { img: port2, title: "Course Recommendation System", 
       desc: "An AI-based course recommendation system that suggests personalized courses to students based on their interests, performance, and learning goals using machine learning algorithms." },
     { img: port3, title: "Rental Management System", 
@@ -115,6 +134,8 @@ const CapstoneGrid = () => {
   ];
 
   return (
+    <div className="project-section">
+      <h3 className="projects-title">Projects</h3>
     <div className="capstone-grid">
       {capstoneProjects.map((project, index) => (
           <motion.div
@@ -129,6 +150,7 @@ const CapstoneGrid = () => {
           <p>{project.desc}</p>
         </motion.div>
       ))}
+    </div>
     </div>
   );
 };
