@@ -16,7 +16,6 @@ import ig from "../img/instagram.png";
 import git from "../img/github.png";
 import logo from "../img/Clogo.png";
 import { FaHtml5, FaCss3Alt, FaReact } from "react-icons/fa";
-import { FaLaptopCode, FaRocket, FaGlobe, FaMagic, 	FaPaintBrush, FaStar } from "react-icons/fa";
 import { SiFigma } from "react-icons/si";
 
 
@@ -35,7 +34,7 @@ const Home = () => {
         <li><a href="#PORTFOLIO">Portfolio</a></li>
         <li><a href="#CONTACT">Contact</a></li>
         <button className="resumebtn">
-                  <img src={download} className="Downloadicon" />
+        <i class="fa fa-download"></i>
                   <a href="/resume.pdf" download className="resume">Resume</a>
                 </button>
       </ul>

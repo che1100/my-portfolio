@@ -105,8 +105,10 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
+    opacity: 0; /* Start hidden */
     animation: fadeInUp 1.5s ease-out forwards;
-    animation-delay: 1s; 
+    animation-delay: 1s;
+
 }
 
 .Home-Text {
@@ -123,6 +125,7 @@ html{
         transform: translateY(0);
     }
 }
+
 
 .waving-image{
     display: flex;
